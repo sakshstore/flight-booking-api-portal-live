@@ -1,0 +1,281 @@
+.scrollbar {
+    float: left;
+    height: 170px;
+    width:100%;
+    background: #fff;
+    overflow-y: scroll;
+    margin-bottom: 25px;
+}
+section.top-routes {
+    text-align: center;
+}
+
+.sidebar-left {
+    padding-right: 10px;
+    border-right: 1px solid #d4d4d4;
+}
+.scrollbar-primary::-webkit-scrollbar {
+  width: 12px;
+  background-color: #F5F5F5; }
+
+.scrollbar-primary::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: orange; }
+
+.scrollbar-warning::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #F5F5F5;
+  border-radius: 10px; }
+
+  
+
+.card:hover {
+    border: 1px solid #ED8323;
+}
+.btn:hover {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+a.nav-link.waves-effect.waves-light:hover {
+    background: orange;
+}
+a.nav-link.active{
+	       background: orange;
+}
+
+a.nav-link.waves-light.active {
+    background: #FF9800;
+}
+div.scrollmenu {
+    background-color: transparent;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+div.scrollmenu ul li a {
+    display: inline-flex;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+.classic-tabs {
+    margin-top: 170px;
+}
+div.scrollmenu li.nav-item {
+    display: inline-block;
+}
+
+section.banner {
+    height: 530px;
+    padding: 50px 120px 50px 120px;
+    background: #001650;
+}
+section.banner1 {
+      background: linear-gradient(#0e3c5a,#01304d, #125681,#063652);
+}
+.modal-body a.nav-link.active {
+    background: #33b6e5;
+    color: #fff;
+} 
+.modal-body a.nav-link {
+    color: #212020;
+}
+.modal-header {
+    background: #06b4c7;
+    color: #fff;
+}
+.modal-body ul.nav.md-pills.pills-primary.flex-column {
+    border-right: 1px solid #ebebeb;
+}
+.modal-backdrop.show {
+    opacity: .5;
+    z-index: 1 !important;
+}
+@media only screen and (max-width: 768px) {
+section.banner {
+    height: auto;
+    padding: 0; 
+    background: #001650;
+    width: 100%;
+}
+button.btn.btn-sm.btn-outline-warning.waves-effect.waves-light {
+    padding: 5px 8px 5px 8px;
+}
+.section-img img {
+    width: 100%;
+}
+section.banner1 {
+    padding: 0; 
+    background: #001650;
+    width: 100%;
+}
+.classic-tabs {
+    margin-top: 75px;
+}
+.view.banner{
+    height: 500px !important;
+}
+h3.h4.white-text.text-left.mt-5.mb-5.wow.bounceInDown {
+    text-align: center !important;
+}
+div#carousel-example-1z .carousel-item {
+    height: 180px;
+}
+.carousel-caption {
+    top: 0;
+}
+img.d-block.w-100 {
+    height: 180px;
+}
+
+}
+@media only screen and (max-width: 560px) {
+.view.ng-scope {
+    height: 560px !important;
+}
+.animated.zoomInRight {
+
+    text-align: center;
+
+}
+.navbar.navbar-expand-lg.navbar-dark.white.lighten-2.py-3 {
+    text-align: center;
+}
+.tab-content {
+    width: 100%;
+}
+button.btn.btn-sm.btn-outline-warning.waves-effect.waves-light {
+    padding: 5px 6px 5px 6px;
+    margin: 20px 0 5px 0px;
+}
+.view.banner {
+    height: 1070px !important;
+}
+h3.h4.white-text.text-left.mt-5.mb-5.wow.bounceInDown {
+    text-align: center !important;
+}
+section .row.wow.fadeIn .col-lg-6.col-md-12 {
+    text-align: center;
+}
+}
+
+@media only screen and (max-width: 425px) {
+section.banner {
+    height: auto;
+    background: #001650;
+    width: 100%;
+}
+button.btn.btn-sm.btn-outline-warning.waves-effect.waves-light {
+    padding: 8px 17px 8px 16px;
+    margin: 20px 3px 8px 3px;
+}
+.view.ng-scope {
+    height: 560px !important;
+}
+section.banner.mt-5 img {
+    height: 160px;
+}
+section.banner1 {
+    background: #001650;
+    width: 100%;
+}
+.classic-tabs {
+    margin-top: 60px;
+}
+.whatwedo .tab-pane a {
+    width: 170px;
+}
+footer .text-right {
+    text-align: center;
+}
+}
+@media only screen and (max-width:375px){
+.whatwedo .tab-pane a {
+    width: 150px;
+}
+button.btn.btn-sm.btn-outline-warning.waves-effect.waves-light {
+    padding: 5px 10px 5px 10px;
+    margin: 20px 3px 8px 3px;
+}
+}
+@media only screen and (max-width: 360px) {
+section.banner {
+    height: auto;
+    background: #001650;
+    width: 100%;
+}
+button.btn.btn-sm.btn-outline-warning.waves-effect.waves-light {
+    padding: 5px 8px 5px 8px;
+}
+.view.ng-scope {
+    height: 560px !important;
+}
+section.banner.mt-5 img {
+    height: 160px;
+}
+section.banner1 {
+    background: #001650;
+    width: 100%;
+}
+.classic-tabs {
+    margin-top: 60px;
+}
+.whatwedo .tab-pane a {
+    width: 143px;
+}
+footer .text-right {
+    text-align: center;
+}
+}
+
+
+@media only screen and (max-width: 320px) {
+section.banner {
+    height: 160px;
+    background: #001650;
+    width: 100%;
+}
+button.btn.btn-sm.btn-outline-warning.waves-effect.waves-light {
+    padding: 5px 6px 5px 6px;
+    margin: 20px 0 5px 0px;
+}
+section.banner1 {
+    padding: 0; 
+    background: #001650;
+    width: 100%;
+}
+.classic-tabs {
+    margin-top: 60px;
+}
+.whatwedo .tab-pane a {
+    width: 120px;
+}
+}
+.modal-dialog {
+    max-width: 1000px;
+}
+.waves-input-wrapper.waves-effect.waves-light {
+    width: 100%;
+}
+div#accordionEx5{
+	width:100%;
+}
+.panel-body {
+    padding: 20px 10px 0px 10px;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    border: 1px solid;
+    margin: 0 0 10px;
+    text-align: justify;
+}
+.table.table-bordered tbody tr th {
+    color: #000;
+}
+.table.table-bordered tbody tr td {
+    color: #000;
+}
+.uib-tab.nav-item.ng-scope.ng-isolate-scope a {
+    color: blue;
+}

@@ -1,0 +1,1636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Flight Bookings</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.min.css" rel="stylesheet">
+	    <link href="css/mycss.css" rel="stylesheet">
+    <style type="text/css">
+
+      html,
+      body,
+      header,
+      .carousel {
+        height: 60vh;
+      }
+
+      @media (max-width: 740px) {
+        html,
+        body,
+        header,
+        .carousel {
+          height: 100vh;
+        }
+      }
+
+      @media (min-width: 800px) and (max-width: 850px) {
+        html,
+        body,
+        header,
+        .carousel {
+          height: 100vh;
+        }
+      }
+
+      @media (min-width: 800px) and (max-width: 850px) {
+              .navbar:not(.top-nav-collapse) {
+                  background: #1C2331!important;
+              }
+          }
+    </style>
+</head>
+
+<body>
+<div class="navbar navbar-expand-lg navbar-dark white lighten-2 py-3">
+<div class="container">
+
+<div class="col-md-6">
+                  <h1 class="text-uppercase"><strong><a href="../index.html" class="orange-text">Flight Booking</a> </strong></h1>
+				</div>
+<div class="col-md-6">
+				
+                    
+                        
+                               <button type="button" class="btn btn-sm btn-outline-warning waves-effect waves-light">Register</button>
+							   <button type="button" class="btn btn-sm btn-outline-warning waves-effect waves-light">Sign In</button>
+							   <button type="button" class="btn btn-sm btn-outline-warning waves-effect waves-light">Agents</button>
+							   <button type="button" class="btn btn-sm btn-outline-warning waves-effect waves-light">Corporate</button>
+                          
+                     
+                    </div>
+					
+					 </div>
+					
+                </div>
+
+  <!-- Navbar -->
+  
+ <nav class="navbar navbar-expand-lg navbar-dark black border-bottom border-warning p-0">
+ <div class="container">
+                    <a class="navbar-brand px-4" href="index.html">Flight Booking </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <ul class="navbar-nav mr-auto">
+                      
+                            <li class="nav-item">
+                                <a class="nav-link waves-effect waves-light active px-3" href="index.html">Flights</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link waves-effect waves-light px-3" href="hotels.html">Hotels</a>
+                            </li>
+							   <li class="nav-item">
+                                <a class="nav-link waves-effect waves-light px-3" href="#">Cars</a>
+                            </li>
+							   <li class="nav-item">
+                                <a class="nav-link waves-effect waves-light px-3" href="#">Buses</a>
+                            </li>
+							   <li class="nav-item">
+                                <a class="nav-link waves-effect waves-light px-3" href="#">Gift Cards</a>
+                            </li>
+							   <li class="nav-item">
+                                <a class="nav-link waves-effect waves-light px-3" href="visa.html">Visa</a>
+                            </li>
+							    <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle waves-effect waves-light px-3" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Holidays
+                                </a>
+                                <div class="dropdown-menu dropdown-warning" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item waves-effect waves-light" href="domestic_holiday.html">Domestic Holidays</a>
+                                    <a class="dropdown-item waves-effect waves-light" href="international_holiday.html">International Holidays</a>
+                                    
+                                </div>
+                            </li>
+							   <li class="nav-item">
+                                <a class="nav-link waves-effect waves-light px-3" href="park.html">Parks</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle waves-effect waves-light px-3" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Bookings
+
+                                </a>
+                                <div class="dropdown-menu dropdown-warning" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item waves-effect waves-light" href="#">Print E-tickets</a>
+                                    <a class="dropdown-item waves-effect waves-light" href="#">Cancel Bookings</a>
+                                 
+                                </div>
+                            </li>
+							  <li class="nav-item">
+                                <a class="nav-link waves-effect waves-light px-3" href="contact.html">Contact us</a>
+                            </li>
+                        </ul>
+                    </div>
+					</div>
+                </nav>
+
+  <main>
+<div style="height:30px"></div>
+<!-- Card -->
+<section>
+<div class="container">
+	<div class="card">
+
+	<div class="card-body px-lg-5 pt-0">
+	<form class="text-center">
+	<div class="form-row">
+	<div class="row">
+	<div class="md-form col-2">
+	<input type="email" id="materialResisterFormFirstForm" class="form-control">
+	<label for="materialResisterFormFirstForm">Form</label>
+	</div>
+		<div class="md-form col-2">
+	<input type="email" id="materialResisterFormFirstTo" class="form-control">
+	<label for="materialResisterFormFirstTO">To</label>
+	</div>
+	         <div class="md-form col-2">
+                <input type="email" id="materialRegisterFormDepartureDate" class="form-control">
+                <label for="materialRegisterDepartureDate">Departure Date</label>
+            </div>
+			 <div class="md-form col-2">
+                <input type="password" id="materialRegisterFormReturnDate" class="form-control" aria-describedby="materialRegisterFormPasswordHelpBlock">
+                <label for="materialRegisterFormReturnDate">Return Date</label>
+             
+            </div>
+			 <div class="md-form col-2">
+                <input type="password" id="materialRegisterFormTravellers" class="form-control" aria-describedby="materialRegisterFormPhoneHelpBlock">
+                <label for="materialRegisterFormTravellers">Travellers, Class</label>
+            
+            </div>
+	      
+
+            <!-- Sign up button -->
+            <button class=" col-2 btn-outline-warning btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Search</button>
+
+          
+
+        </form>
+        <!-- Form -->
+	</div>
+	</div>
+	</div>
+		</div>
+	  <hr>
+	  <div class="row">
+	 
+	  <div class="col-md-4">
+	   <div class="card">
+	  <div class="card-body">
+	  <div class="m-3 tab-content">
+	  <h4>Refine Results</h4>
+	  <hr>
+	<div class="custom control custom-checkbox">
+ <h4>Stops</h4>
+	<input type="checkbox" class="custom-control-input" id="defaultUnchecked1" style="position:relative;    margin: 5px;">
+	<label class="custom-control-label" for="defaultUnchecked1">Non Stop</label>
+	</div>
+	
+	  
+	    
+	  <div class="custom control custom-checkbox">
+	 
+	 <input type="checkbox" class="custom-control-input" id="defaultUnchecked2" style="position:relative;    margin: 5px;">
+	<label class="custom-control-label" for="defaultUnchecked2">1 Stop</label> 
+	  </div>
+	 
+	  
+	    
+	  <div class="custom control custom-checkbox">
+	 
+	  <input type="checkbox" class="custom-control-input" id="defaultUnchecked3" style="position:relative;    margin: 5px;">
+	<label class="custom-control-label" for="defaultUnchecked3">2+ Stop</label>
+	  </div>
+	 
+	  <hr>
+	   
+	  <div class="custom control custom-checkbox">
+	  <h4>Fare Type</h4>
+	 <input type="checkbox" class="custom-control-input" id="defaultUnchecked4" style="position:relative;    margin: 5px;">
+	<label class="custom-control-label" for="defaultUnchecked4">Refundable</label>
+	  </div>
+	 
+
+	   
+	  <div class="custom control custom-checkbox">
+	 <input type="checkbox" class="custom-control-input" id="defaultUnchecked5" style="position:relative;    margin: 5px;">
+	<label class="custom-control-label" for="defaultUnchecked5">Non Refundable</label>
+	  </div>
+	 
+	  <hr>
+	  
+	  <div class="custom control custom-checkbox">
+	   <h4>Price</h4>
+	   <p>Upto Rs 34,233</p>
+	<div class="progress md-progress" style="height: 20px">
+  <div class="progress-bar orange" role="progressbar" style="width: 25%; height: 20px" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+ 
+</div>
+ <p class="float-left"> Rs 5,594</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <p class="float-right">Rs 34,233</p>
+	  </div>
+	 
+	  <hr>
+	   
+	  <div class="custom control custom-checkbox">
+	   <h4>Airlines</h4>
+	   <div class="scrollbar scrollbar-primary">
+    <div class="force-overflow">
+
+	 <input type="checkbox" class="custom-control-input" id="defaultUnchecked6" style="position:relative;    margin: 5px;">
+	<label class="custom-control-label" for="defaultUnchecked6">FlyDubai</label>
+	  </div>
+	    <div class="custom control custom-checkbox">
+	 <input type="checkbox" class="custom-control-input" id="defaultUnchecked7" style="position:relative;    margin: 5px;">
+	<label class="custom-control-label" for="defaultUnchecked7">Air India Express</label>
+	  </div>
+	  <div class="custom control custom-checkbox">
+	 <input type="checkbox" class="custom-control-input" id="defaultUnchecked" style="position:relative;    margin: 5px;">
+	<label class="custom-control-label" for="defaultUnchecked">Jet Airways</label>
+	  </div>
+	  <div class="custom control custom-checkbox">
+	 <input type="checkbox" class="custom-control-input" id="defaultUnchecked8" style="position:relative;    margin: 5px;">
+	<label class="custom-control-label" for="defaultUnchecked8">Air India</label>
+	  </div>
+	    <div class="custom control custom-checkbox">
+	 <input type="checkbox" class="custom-control-input" id="defaultUnchecked9" style="position:relative;    margin: 5px;">
+	<label class="custom-control-label" for="defaultUnchecked9">Oman Air </label>
+	  </div>  <div class="custom control custom-checkbox">
+	 <input type="checkbox" class="custom-control-input" id="defaultUnchecked10" style="position:relative;    margin: 5px;">
+	<label class="custom-control-label" for="defaultUnchecked10">Gulf Air </label>
+	  </div>  <div class="custom control custom-checkbox">
+	 <input type="checkbox" class="custom-control-input" id="defaultUnchecked11" style="position:relative;    margin: 5px;">
+	<label class="custom-control-label" for="defaultUnchecked11">Kuwait Airways</label>
+	  </div>  <div class="custom control custom-checkbox">
+	 <input type="checkbox" class="custom-control-input" id="defaultUnchecked12" style="position:relative;    margin: 5px;">
+	<label class="custom-control-label" for="defaultUnchecked12">Srilankan Airlines</label>
+	  </div> 
+	  <div class="custom control custom-checkbox">
+	 <input type="checkbox" class="custom-control-input" id="defaultUnchecked13" style="position:relative;    margin: 5px;">
+	<label class="custom-control-label" for="defaultUnchecked13">Ethipian Airlines</label>
+	  </div>
+	    <div class="custom control custom-checkbox">
+	 <input type="checkbox" class="custom-control-input" id="defaultUnchecked14" style="position:relative;    margin: 5px;">
+	<label class="custom-control-label" for="defaultUnchecked14">Saudi Arabian</label>
+	  </div>
+	    <div class="custom control custom-checkbox">
+	 <input type="checkbox" class="custom-control-input" id="defaultUnchecked" style="position:relative;    margin: 5px;">
+	<label class="custom-control-label" for="defaultUnchecked">Thai Airways</label>
+	  </div>
+	   <div class="custom control custom-checkbox">
+	 <input type="checkbox" class="custom-control-input" id="defaultUnchecked15" style="position:relative;    margin: 5px;">
+	<label class="custom-control-label" for="defaultUnchecked15">Royal Nepal</label>
+	  </div>
+	
+	 
+	   <div class="custom control custom-checkbox">
+	 <input type="checkbox" class="custom-control-input" id="defaultUnchecked16" style="position:relative;    margin: 5px;">
+	<label class="custom-control-label" for="defaultUnchecked16">Indigo</label>
+	  </div>
+	   </div>
+	   </div>
+	   </div>
+</div>
+	  
+	  </div>
+	  </div>
+	   <div class="col-md-8 text-center">
+	   <div class="card">
+	    <div class="text-center">
+	 <!-- Nav tabs -->
+<ul class="nav nav-tabs md-tabs nav-justified" role="tablist">
+    <li class="nav-item black-text">
+        <a class="nav-link active black-text" data-toggle="tab" href="#panel555" role="tab">
+       Sep 15
+ <br> <a href="#" class="fa fa-inr"> 6132</a></a>
+    </li>
+    <li class="nav-item black-text">
+        <a class="nav-link black-text" data-toggle="tab" href="#panel666" role="tab">
+       Sep 16
+ <br> <a href="#" class="fa fa-inr"> 5594</a></a>
+    </li>
+	   <li class="nav-item black-text">
+        <a class="nav-link black-text" data-toggle="tab" href="#panel777" role="tab">
+        Sep 17
+ <br> <a href="#" class="fa fa-inr"> 5594</a></a>
+    </li>
+	   <li class="nav-item black-text">
+        <a class="nav-link black-text" data-toggle="tab" href="#panel888" role="tab">
+       Sep 18
+ <br> <a href="#" class="fa fa-inr"> 5594</a></a>
+    </li>
+	    <li class="nav-item black-text">
+        <a class="nav-link black-text" data-toggle="tab" href="#panel999" role="tab">
+       Sep 19
+ <br><a href="#" class="fa fa-inr"> 5594</a> </a>
+    </li>
+	    <li class="nav-item black-text">
+        <a class="nav-link black-text" data-toggle="tab" href="#panel111" role="tab">
+      Sep 20
+ <br> <a href="#" class="fa fa-inr"> 5594 </a></a>
+    </li>
+	    <li class="nav-item black-text">
+        <a class="nav-link black-text" data-toggle="tab" href="#panel222" role="tab">
+        Sep 21
+ <br> <a href="#" class="fa fa-inr"> 5594</a></a>
+    </li>
+	    <li class="nav-item black-text">
+        <a class="nav-link black-text" data-toggle="tab" href="#panel333" role="tab">
+       Sep 22
+ <br> </i><a href="#" class="fa fa-inr"> 5594</a></a>
+    </li>
+</ul>
+<!-- Nav tabs -->
+
+	
+	 </div>
+	   <div class="card-body tab-content">
+	  	  <table class="table table-hover tab-pane fade in show active" id="panel555" role="tabpanel">
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">
+Airline</th>
+      <th scope="col">Departure</th>
+      <th scope="col">Duration</th>
+	  <th scope="col">Arrival</th>
+      <th scope="col">Price
+</th>
+  <th scope="col">
+</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"></th>
+      <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+<br>DXB</td>
+      <td>3h 40m
+
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button> <br>  <a href="#">Flight Details</a></td>
+
+    </tr>
+    <tr>
+      <th scope="row"></th>
+       <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+<br>DXB</td>
+      <td>3h 40m
+
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button> <br> <a href="#">Flight Details</a> </td>
+    </tr>
+    <tr>
+      <th scope="row"></th>
+        <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+<br>DXB</td>
+      <td>3h 40m
+
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button> <br> <a href="#">Flight Details</a> </td>
+    </tr>
+	    <tr>
+      <th scope="row"></th>
+        <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+DXB</td>
+      <td>3h 40m
+
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button>  <br><a href="#">Flight Details</a></td>
+    </tr>
+	    <tr>
+      <th scope="row"></th>
+        <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+<br>DXB</td>
+      <td>3h 40m
+<img src="img/srp_arrow.svg">
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button> <br>  <a href="#">Flight Details</a></td>
+    </tr>
+	    <tr>
+      <th scope="row"></th>
+        <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+<br>DXB</td>
+      <td>3h 40m
+
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button> <br> <a href="#">Flight Details</a> </td>
+    </tr>
+	    <tr>
+      <th scope="row"></th>
+        <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+<br>DXB</td>
+      <td>3h 40m
+
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button>  <br><a href="#">Flight Details</a> </td>
+    </tr>
+  </tbody>
+</table>
+	  	  <table class="table table-hover tab-pane fade" id="panel666" role="tabpanel">
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">
+Airline</th>
+      <th scope="col">Dexfgthyjyiuiparture</th>
+      <th scope="col">Duration</th>
+	  <th scope="col">Arrival</th>
+      <th scope="col">Price
+</th>
+  <th scope="col">
+</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"></th>
+      <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+<br>DXB</td>
+      <td>3h 40m
+
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button> <br>  <a href="#">Flight Details</a></td>
+
+    </tr>
+    <tr>
+      <th scope="row"></th>
+       <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+<br>DXB</td>
+      <td>3h 40m
+
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button> <br> <a href="#">Flight Details</a> </td>
+    </tr>
+    <tr>
+      <th scope="row"></th>
+        <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+<br>DXB</td>
+      <td>3h 40m
+
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button> <br> <a href="#">Flight Details</a> </td>
+    </tr>
+	    <tr>
+      <th scope="row"></th>
+        <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+DXB</td>
+      <td>3h 40m
+
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button>  <br><a href="#">Flight Details</a></td>
+    </tr>
+	    <tr>
+      <th scope="row"></th>
+        <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+<br>DXB</td>
+      <td>3h 40m
+<img src="img/srp_arrow.svg">
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button> <br>  <a href="#">Flight Details</a></td>
+    </tr>
+	    <tr>
+      <th scope="row"></th>
+        <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+<br>DXB</td>
+      <td>3h 40m
+
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button> <br> <a href="#">Flight Details</a> </td>
+    </tr>
+	    <tr>
+      <th scope="row"></th>
+        <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+<br>DXB</td>
+      <td>3h 40m
+
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button>  <br><a href="#">Flight Details</a> </td>
+    </tr>
+  </tbody>
+</table>
+ <table class="table table-hover tab-pane fade" id="panel777" role="tabpanel">
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">
+Airline</th>
+      <th scope="col">Dexfgthyjyiuiparture</th>
+      <th scope="col">Duration</th>
+	  <th scope="col">Arrival</th>
+      <th scope="col">Price
+</th>
+  <th scope="col">
+</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"></th>
+      <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+<br>DXB</td>
+      <td>3h 40m
+
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button> <br>  <a href="#">Flight Details</a></td>
+
+    </tr>
+    <tr>
+      <th scope="row"></th>
+       <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+<br>DXB</td>
+      <td>3h 40m
+
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button> <br> <a href="#">Flight Details</a> </td>
+    </tr>
+    <tr>
+      <th scope="row"></th>
+        <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+<br>DXB</td>
+      <td>3h 40m
+
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button> <br> <a href="#">Flight Details</a> </td>
+    </tr>
+	    <tr>
+      <th scope="row"></th>
+        <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+DXB</td>
+      <td>3h 40m
+
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button>  <br><a href="#">Flight Details</a></td>
+    </tr>
+	    <tr>
+      <th scope="row"></th>
+        <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+<br>DXB</td>
+      <td>3h 40m
+<img src="img/srp_arrow.svg">
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button> <br>  <a href="#">Flight Details</a></td>
+    </tr>
+	    <tr>
+      <th scope="row"></th>
+        <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+<br>DXB</td>
+      <td>3h 40m
+
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button> <br> <a href="#">Flight Details</a> </td>
+    </tr>
+	    <tr>
+      <th scope="row"></th>
+        <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+<br>DXB</td>
+      <td>3h 40m
+
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button>  <br><a href="#">Flight Details</a> </td>
+    </tr>
+  </tbody>
+</table>
+ <table class="table table-hover tab-pane fade" id="panel888" role="tabpanel">
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">
+Airline</th>
+      <th scope="col">Dexfgthyjyiuiparture</th>
+      <th scope="col">Duration</th>
+	  <th scope="col">Arrival</th>
+      <th scope="col">Price
+</th>
+  <th scope="col">
+</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"></th>
+      <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+<br>DXB</td>
+      <td>3h 40m
+
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button> <br>  <a href="#">Flight Details</a></td>
+
+    </tr>
+    <tr>
+      <th scope="row"></th>
+       <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+<br>DXB</td>
+      <td>3h 40m
+
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button> <br> <a href="#">Flight Details</a> </td>
+    </tr>
+    <tr>
+      <th scope="row"></th>
+        <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+<br>DXB</td>
+      <td>3h 40m
+
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button> <br> <a href="#">Flight Details</a> </td>
+    </tr>
+	    <tr>
+      <th scope="row"></th>
+        <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+DXB</td>
+      <td>3h 40m
+
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button>  <br><a href="#">Flight Details</a></td>
+    </tr>
+	    <tr>
+      <th scope="row"></th>
+        <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+<br>DXB</td>
+      <td>3h 40m
+<img src="img/srp_arrow.svg">
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button> <br>  <a href="#">Flight Details</a></td>
+    </tr>
+	    <tr>
+      <th scope="row"></th>
+        <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+<br>DXB</td>
+      <td>3h 40m
+
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button> <br> <a href="#">Flight Details</a> </td>
+    </tr>
+	    <tr>
+      <th scope="row"></th>
+        <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+<br>DXB</td>
+      <td>3h 40m
+
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button>  <br><a href="#">Flight Details</a> </td>
+    </tr>
+  </tbody>
+</table>
+ <table class="table table-hover tab-pane fade" id="panel999" role="tabpanel">
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">
+Airline</th>
+      <th scope="col">Dexfgthyjyiuiparture</th>
+      <th scope="col">Duration</th>
+	  <th scope="col">Arrival</th>
+      <th scope="col">Price
+</th>
+  <th scope="col">
+</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"></th>
+      <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+<br>DXB</td>
+      <td>3h 40m
+
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button> <br>  <a href="#">Flight Details</a></td>
+
+    </tr>
+    <tr>
+      <th scope="row"></th>
+       <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+<br>DXB</td>
+      <td>3h 40m
+
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button> <br> <a href="#">Flight Details</a> </td>
+    </tr>
+    <tr>
+      <th scope="row"></th>
+        <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+<br>DXB</td>
+      <td>3h 40m
+
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button> <br> <a href="#">Flight Details</a> </td>
+    </tr>
+	    <tr>
+      <th scope="row"></th>
+        <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+DXB</td>
+      <td>3h 40m
+
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button>  <br><a href="#">Flight Details</a></td>
+    </tr>
+	    <tr>
+      <th scope="row"></th>
+        <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+<br>DXB</td>
+      <td>3h 40m
+<img src="img/srp_arrow.svg">
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button> <br>  <a href="#">Flight Details</a></td>
+    </tr>
+	    <tr>
+      <th scope="row"></th>
+        <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+<br>DXB</td>
+      <td>3h 40m
+
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button> <br> <a href="#">Flight Details</a> </td>
+    </tr>
+	    <tr>
+      <th scope="row"></th>
+        <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+<br>DXB</td>
+      <td>3h 40m
+
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button>  <br><a href="#">Flight Details</a> </td>
+    </tr>
+  </tbody>
+</table>
+ <table class="table table-hover tab-pane fade" id="panel111" role="tabpanel">
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">
+Airline</th>
+      <th scope="col">Dexfgthyjyiuiparture</th>
+      <th scope="col">Duration</th>
+	  <th scope="col">Arrival</th>
+      <th scope="col">Price
+</th>
+  <th scope="col">
+</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"></th>
+      <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+<br>DXB</td>
+      <td>3h 40m
+
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button> <br>  <a href="#">Flight Details</a></td>
+
+    </tr>
+    <tr>
+      <th scope="row"></th>
+       <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+<br>DXB</td>
+      <td>3h 40m
+
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button> <br> <a href="#">Flight Details</a> </td>
+    </tr>
+    <tr>
+      <th scope="row"></th>
+        <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+<br>DXB</td>
+      <td>3h 40m
+
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button> <br> <a href="#">Flight Details</a> </td>
+    </tr>
+	    <tr>
+      <th scope="row"></th>
+        <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+DXB</td>
+      <td>3h 40m
+
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button>  <br><a href="#">Flight Details</a></td>
+    </tr>
+	    <tr>
+      <th scope="row"></th>
+        <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+<br>DXB</td>
+      <td>3h 40m
+<img src="img/srp_arrow.svg">
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button> <br>  <a href="#">Flight Details</a></td>
+    </tr>
+	    <tr>
+      <th scope="row"></th>
+        <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+<br>DXB</td>
+      <td>3h 40m
+
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button> <br> <a href="#">Flight Details</a> </td>
+    </tr>
+	    <tr>
+      <th scope="row"></th>
+        <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+<br>DXB</td>
+      <td>3h 40m
+
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button>  <br><a href="#">Flight Details</a> </td>
+    </tr>
+  </tbody>
+</table>
+ <table class="table table-hover tab-pane fade" id="panel222" role="tabpanel">
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">
+Airline</th>
+      <th scope="col">Dexfgthyjyiuiparture</th>
+      <th scope="col">Duration</th>
+	  <th scope="col">Arrival</th>
+      <th scope="col">Price
+</th>
+  <th scope="col">
+</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"></th>
+      <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+<br>DXB</td>
+      <td>3h 40m
+
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button> <br>  <a href="#">Flight Details</a></td>
+
+    </tr>
+    <tr>
+      <th scope="row"></th>
+       <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+<br>DXB</td>
+      <td>3h 40m
+
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button> <br> <a href="#">Flight Details</a> </td>
+    </tr>
+    <tr>
+      <th scope="row"></th>
+        <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+<br>DXB</td>
+      <td>3h 40m
+
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button> <br> <a href="#">Flight Details</a> </td>
+    </tr>
+	    <tr>
+      <th scope="row"></th>
+        <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+DXB</td>
+      <td>3h 40m
+
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button>  <br><a href="#">Flight Details</a></td>
+    </tr>
+	    <tr>
+      <th scope="row"></th>
+        <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+<br>DXB</td>
+      <td>3h 40m
+<img src="img/srp_arrow.svg">
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button> <br>  <a href="#">Flight Details</a></td>
+    </tr>
+	    <tr>
+      <th scope="row"></th>
+        <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+<br>DXB</td>
+      <td>3h 40m
+
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button> <br> <a href="#">Flight Details</a> </td>
+    </tr>
+	    <tr>
+      <th scope="row"></th>
+        <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+<br>DXB</td>
+      <td>3h 40m
+
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button>  <br><a href="#">Flight Details</a> </td>
+    </tr>
+  </tbody>
+</table>
+<table class="table table-hover tab-pane fade" id="panel333" role="tabpanel">
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">
+Airline</th>
+      <th scope="col">Dexfgthyjyiuiparture</th>
+      <th scope="col">Duration</th>
+	  <th scope="col">Arrival</th>
+      <th scope="col">Price
+</th>
+  <th scope="col">
+</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"></th>
+      <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+<br>DXB</td>
+      <td>3h 40m
+
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button> <br>  <a href="#">Flight Details</a></td>
+
+    </tr>
+    <tr>
+      <th scope="row"></th>
+       <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+<br>DXB</td>
+      <td>3h 40m
+
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button> <br> <a href="#">Flight Details</a> </td>
+    </tr>
+    <tr>
+      <th scope="row"></th>
+        <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+<br>DXB</td>
+      <td>3h 40m
+
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button> <br> <a href="#">Flight Details</a> </td>
+    </tr>
+	    <tr>
+      <th scope="row"></th>
+        <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+DXB</td>
+      <td>3h 40m
+
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button>  <br><a href="#">Flight Details</a></td>
+    </tr>
+	    <tr>
+      <th scope="row"></th>
+        <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+<br>DXB</td>
+      <td>3h 40m
+<img src="img/srp_arrow.svg">
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button> <br>  <a href="#">Flight Details</a></td>
+    </tr>
+	    <tr>
+      <th scope="row"></th>
+        <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+<br>DXB</td>
+      <td>3h 40m
+
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button> <br> <a href="#">Flight Details</a> </td>
+    </tr>
+	    <tr>
+      <th scope="row"></th>
+        <td>
+
+Jet Airways
+<br>9W - 545</td>
+      <td>14:45
+<br>DXB</td>
+      <td>3h 40m
+
+<br>Non Stop</td>
+  <td>19:55
+<br>DEL</td>
+      <td> 6,357
+<br>Non Refundable</td>
+  <td>  <button type="button" class="btn btn-md btn-warning  mb-3">Book</button>  <br><a href="#">Flight Details</a> </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+	
+	  </div>
+
+	  </div>
+	   
+	  </div>
+	 
+      </section><!--Section: Main features & Quick Start-->
+<!-- Card -->
+
+ 
+
+  </main>
+  <!--Main layout-->
+
+
+  <!--Footer-->
+ <footer id="footer" class="page-footer unique-color-dark pt-4 mt-4">
+
+  <!--Footer Links-->
+  <div class="container text-center text-md-left mt-5">
+    <div class="row mt-3">
+      <!--First column-->
+      <div class="col-md-3 col-lg-3 col-xl-3 mb-4">
+       <h2 class="h2 white-text">Flight Booking </h2>
+       
+        <h4 class="pt-3">
+          <a id="footer-link-faq" href="#" class="orange-text">022 6713 4444</a>
+        </h4>
+         <h4 class="pt-2">
+          <a id="footer-link-browsers" href="#" class="orange-text">support@Flight Booking .com</a>
+        </h4>
+        <p>
+          <a id="footer-link-license" href="#">24/7 Dedicated Customer Support</a>
+        </p>
+        <p>
+          <a id="footer-link-changelog" href="#">Copyright © 2008-2018 Flight Booking .com (India) Pvt. Ltd. 
+All Rights Reserved.</a>
+        </p>
+     
+      </div>
+      <!--/.First column-->
+      <!--Second column-->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+        <h6 class="text-uppercase font-weight-bold mb-4">
+          <strong>About Flight Booking .com</strong>
+        </h6>
+       
+        <p>
+          <a id="footer-link-jquery" href="#">The Management</a>
+        </p>
+        <p>
+          <a id="footer-link-angular" href="#">News Room</a>
+        </p>
+        <p>
+          <a id="footer-link-react" href="#">Testimonials</a>
+        </p>
+        <p>
+          <a id="footer-link-vue" href="#">Careers</a>
+        </p>
+        <p>
+          <a id="footer-link-brandflow" href="#">Franchisee</a>
+        </p>
+        <p>
+          <a id="footer-link-freebies" href="#">Contact Us</a>
+        </p>
+        <p>
+          <a id="footer-link-templates" href="#">Site Map</a>
+        </p>
+      </div>
+      <!--/.Second column-->
+      <!--Third column-->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+        <h6 class="text-uppercase font-weight-bold mb-4">
+          <strong>Corporate & Groups</strong>
+        </h6>
+     
+        <p>
+          <a id="footer-link-tutBootstrap" href="#">Corporate Travel</a>
+        </p>
+        <p>
+          <a id="footer-link-tutWordpress" href="#">Group Travel</a>
+        </p>
+        <p>
+          <a id="footer-link-tutAngular" href="#">MICE</a>
+        </p>
+   
+      </div>
+      <!--/.Third column-->
+      <!--Fourth column-->
+      <div class="col-md-2 col-lg-2 col-xl-2">
+        <h6 class="text-uppercase font-weight-bold mb-4">
+          <strong>Business Programs</strong>
+        </h6>
+       
+        <p>
+         Franchisee</p>
+     
+        <p>
+          <a id="footer-link-team" href="#">
+           Preferred Sales Agent</a>
+        </p>
+        <p>
+          <a id="footer-link-company" href="#">
+           Itz Cash Agent</a>
+        </p>
+        <p>
+          <a id="footer-link-formedia" href="#">
+            For media</a>
+        </p>
+      </div>
+	    <div class="col-md-2 col-lg-3 col-xl-3">
+        <h6 class="text-uppercase font-weight-bold mb-4">
+          <strong>Our Services</strong>
+        </h6>
+       
+        <p>
+         Customer Support</p>
+        <!-- <p>
+              <i class="fa fa-building mr-3"></i> Our story</p> -->
+        <p>
+          <a id="footer-link-team" href="#">
+            Domestic Flight Tickets</a>
+        </p>
+        <p>
+          <a id="footer-link-company" href="#">
+           Domestic Hotels</a>
+        </p>
+        <p>
+          <a id="footer-link-formedia" href="#">
+           Terms & Conditions</a>
+        </p>
+		 <p>
+          <a id="footer-link-company" href="#">
+           Privacy Policy</a>
+        </p>
+        <p>
+          <a id="footer-link-formedia" href="#">
+         Payment Services</a>
+        </p>
+      </div>
+      <!--/.Fourth column-->
+    </div>
+  </div>
+  <!--/.Footer Links-->
+  <!-- Copyright-->
+  <div class="footer-copyright py-3 text-center">
+    © 2018 Copyright:
+    <a href="#">
+      <strong>Flight Booking </strong>
+    </a>
+  </div>
+  <!--/.Copyright -->
+</footer>
+  <!--/.Footer-->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+      <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+  </script>
+  <script>
+// Data Picker Initialization
+$('.datepicker').pickadate();
+</script>
+  </body>
+
+</html>

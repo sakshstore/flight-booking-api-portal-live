@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Flight Booking </title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+	<link rel="canonical" href="https://mdbootstrap.com/javascript/carousel/">
+	
+    <link href="css/style.min.css" rel="stylesheet">
+	    <link href="css/mycss.css" rel="stylesheet">
+    <style type="text/css">
+
+      html,
+      body,
+      header,
+      .carousel {
+        height: 60vh;
+      }
+
+      @media (max-width: 740px) {
+        html,
+        body,
+        header,
+        .carousel {
+          height: 100vh;
+        }
+      }
+
+      @media (min-width: 800px) and (max-width: 850px) {
+        html,
+        body,
+        header,
+        .carousel {
+          height: 100vh;
+        }
+      }
+
+      @media (min-width: 800px) and (max-width: 850px) {
+              .navbar:not(.top-nav-collapse) {
+                  background: #1C2331!important;
+              }
+          }
+    </style>
+</head>
+
+<body>
+<div class="navbar navbar-expand-lg navbar-dark white lighten-2 py-3">
+<div class="container">
+
+<div class="col-md-6">
+                  <h1 class="text-uppercase"><strong><a href="../index.html" class="orange-text">Flight Booking</a> </strong></h1>
+				</div>
+<div class="col-md-6">
+				
+                    
+                        
+                               <button type="button" class="btn btn-sm btn-outline-warning waves-effect waves-light">Register</button>
+							   <button type="button" class="btn btn-sm btn-outline-warning waves-effect waves-light">Sign In</button>
+							   <button type="button" class="btn btn-sm btn-outline-warning waves-effect waves-light">Agents</button>
+							   <button type="button" class="btn btn-sm btn-outline-warning waves-effect waves-light">Corporate</button>
+                          
+                     
+                    </div>
+					
+					 </div>
+					
+                </div>
+
+  <!-- Navbar -->
+  
+<nav class="navbar navbar-expand-lg navbar-dark black border-bottom border-warning p-0">
+ <div class="container">
+                    <a class="navbar-brand px-4" href="index.html">Flight Booking </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                         
+                            <li class="nav-item">
+                                <a class="nav-link waves-effect waves-light px-3" href="index.html">Flights</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link waves-effect waves-light px-3" href="hotels.html">Hotels</a>
+                            </li>
+							   <li class="nav-item">
+                                <a class="nav-link waves-effect waves-light px-3" href="#">Cars</a>
+                            </li>
+							   <li class="nav-item">
+                                <a class="nav-link waves-effect waves-light px-3" href="#">Buses</a>
+                            </li>
+							   <li class="nav-item">
+                                <a class="nav-link waves-effect waves-light px-3" href="#">Gift Cards</a>
+                            </li>
+							   <li class="nav-item">
+                                <a class="nav-link waves-effect waves-light px-3" href="visa.html">Visa</a>
+                            </li>
+							    <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle waves-effect waves-light active px-3" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Holidays
+                                </a>
+                                <div class="dropdown-menu dropdown-warning" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item waves-effect waves-light" href="domestic_holiday.html">Domestic Holidays</a>
+                                    <a class="dropdown-item waves-effect waves-light" href="international_holiday.html">International Holidays</a>
+                                    
+                                </div>
+                            </li>
+							   <li class="nav-item">
+                                <a class="nav-link waves-effect waves-light px-3" href="park.html">Parks</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle waves-effect waves-light px-3" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Bookings
+
+                                </a>
+                                <div class="dropdown-menu dropdown-warning" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item waves-effect waves-light" href="#">Print E-tickets</a>
+                                    <a class="dropdown-item waves-effect waves-light" href="#">Cancel Bookings</a>
+                                 
+                                </div>
+                            </li>
+							  <li class="nav-item">
+                                <a class="nav-link waves-effect waves-light px-3" href="contact.html">Contact us</a>
+                            </li>
+                        </ul>
+                      
+                    </div>
+					</div>
+                </nav>
+  <!-- Navbar -->
+
+
+ 
+     
+  <!--/.Carousel Wrapper-->
+
+  <!--Main layout-->
+  <main>
+  
+
+      <!--Section: Main info-->
+      
+	    <div class="container">
+      <!--Section: Main info-->
+
+ <div style="height:30px"></div>
+
+      <!--Section: Main features & Quick Start-->
+
+
+
+<!-- Nav tabs -->
+
+<!-- Nav tabs -->
+<!-- Tab panels -->
+<div class="tab-content">
+    <!--Panel 1-->
+    <div class="tab-pane fade in show active" id="panel555" role="tabpanel">
+        <!-- Nav tabs -->
+	<h2 class="h2">Indian Holiday Packages</h2>
+        <div class="row">
+			
+            <div class="col-md-3 sidebar-left">
+                <ul class="nav md-pills pills-primary flex-column" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active font-weight-bold black-text" data-toggle="tab" href="#panel21" role="tab">Andaman Holidays
+                        
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold black-text" data-toggle="tab" href="#panel22" role="tab">Best of Seven Sisters Holidays
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold black-text" data-toggle="tab" href="#panel23" role="tab">Himachal Holidays
+                      
+                        </a>
+                    </li>
+					     <li class="nav-item">
+                        <a class="nav-link font-weight-bold black-text" data-toggle="tab" href="#panel21" role="tab">Holiday Deals with Flights
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold black-text" data-toggle="tab" href="#panel22" role="tab">Karnataka and Tamil Nadu Holidays
+                      
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold black-text" data-toggle="tab" href="#panel23" role="tab">Kerala Holidays
+                      
+                        </a>
+                    </li>
+					     <li class="nav-item">
+                        <a class="nav-link font-weight-bold black-text" data-toggle="tab" href="#panel21" role="tab">Leh Ladakh Holidays
+                        
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold black-text" data-toggle="tab" href="#panel22" role="tab">Nagaland Hornbill Festival
+                      
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold black-text" data-toggle="tab" href="#panel23" role="tab">Nepal Holidays
+                      
+                        </a>
+                    </li>
+					 <li class="nav-item">
+                        <a class="nav-link font-weight-bold black-text" data-toggle="tab" href="#panel21" role="tab">North East Holidays
+                        
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold black-text" data-toggle="tab" href="#panel22" role="tab">Rajasthan Holidays
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold black-text" data-toggle="tab" href="#panel23" role="tab">Uttarakhand Holidays
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-9">
+                <!-- Tab panels -->
+                <div class="tab-content vertical">
+                    <!--Panel 1-->
+                    <div class="tab-pane fade in show active" id="panel21" role="tabpanel">
+
+                        	<div class="card">
+			<div class="card-body waves-effect waves-light">
+            <div class="row">
+	
+            <div class="col-md-3">
+              <img src="img/ImageReaderArticle1 (1).jpg" width="100%">
+              </div>
+              <div class="col-md-6">
+                <p class="feature-title"><strong>
+Splendid Andamans</strong></p>
+				<p><b>4N / 5D :</b> Port Blair - 3N, Havelock - 1N<br>
+
+<b>Validity :</b> 28-05-2018 / 30-09-2018</p>
+               <a class="btn-floating btn-sm border border-warning waves-effect waves-light">
+			   <i class="home fa fa-bed">
+			   </i></a>
+			 <a class="btn-floating btn-sm border border-warning waves-effect waves-light"> <i class="home fa fa-binoculars"></i>
+			  <a class="btn-floating btn-sm border border-warning waves-effect waves-light"><i class="home fa fa-car"></i>
+			  </a> <a class="btn-floating btn-sm border border-warning waves-effect waves-light"><i class="home fa fa-cutlery"></i></a>
+			  </a> 
+              </div>
+			    <div class="col-md-3">
+                <h5 class="feature-title">Starting From</h5>
+                <p class="grey-text">30,992</p>
+					<button type="button" class="btn btn-md btn-warning  mb-3">Detail</button>
+              </div>
+            </div>
+			  </div>
+            </div>
+			<div style="height:30px"></div>
+			 	<div class="card">
+			<div class="card-body waves-effect waves-light">
+            <div class="row">
+	
+            <div class="col-md-3">
+              <img src="img/ImageReaderArticle1 (1).jpg" width="100%">
+              </div>
+              <div class="col-md-6">
+                <p class="feature-title"><strong>
+Andaman Island Triangle</strong></p>
+				<p><b>6N / 7D :</b> Port Blair - 3N, Havelock - 2N, Neil Island - 1N<br>
+
+<b>Validity :</b>28-05-2018 / 30-09-2018</p>
+               <a class="btn-floating btn-sm border border-warning waves-effect waves-light">
+			   <i class="home fa fa-bed">
+			   </i></a>
+			 <a class="btn-floating btn-sm border border-warning waves-effect waves-light"> <i class="home fa fa-binoculars"></i>
+			  <a class="btn-floating btn-sm border border-warning waves-effect waves-light"><i class="home fa fa-car"></i>
+			  </a> <a class="btn-floating btn-sm border border-warning waves-effect waves-light"><i class="home fa fa-cutlery"></i></a>
+			  </a> 
+              </div>
+			    <div class="col-md-3">
+                <h5 class="feature-title">Starting From</h5>
+                <p class="grey-text">78,774</p>
+					<button type="button" class="btn btn-md btn-warning  mb-3">Detail</button>
+              </div>
+            </div>
+			  </div>
+            </div>
+			<div style="height:30px"></div>
+			 	<div class="card">
+			<div class="card-body waves-effect waves-light">
+            <div class="row">
+	
+            <div class="col-md-3">
+              <img src="img/ImageReaderArticle1 (1).jpg" width="100%">
+              </div>
+              <div class="col-md-6">
+                <p class="feature-title"><strong>Ultimate Andaman</strong></p>
+				<p><b>7N / 8D :</b> Port Blair - 3N, Havelock Island - 2N, Diglipur - 2N<br>
+
+<b>Validity :</b> 28-05-2018 / 30-09-2018</p>
+               <a class="btn-floating btn-sm border border-warning waves-effect waves-light">
+			   <i class="home fa fa-bed">
+			   </i></a>
+			 <a class="btn-floating btn-sm border border-warning waves-effect waves-light"> <i class="home fa fa-binoculars"></i>
+			  <a class="btn-floating btn-sm border border-warning waves-effect waves-light"><i class="home fa fa-car"></i>
+			  </a> <a class="btn-floating btn-sm border border-warning waves-effect waves-light"><i class="home fa fa-cutlery"></i></a>
+			  </a> 
+              </div>
+			    <div class="col-md-3">
+                <h5 class="feature-title">Starting From</h5>
+                <p class="grey-text">130,814 </p>
+					<button type="button" class="btn btn-md btn-warning  mb-3">Detail</button>
+              </div>
+            </div>
+			  </div>
+            </div>
+			<div style="height:30px"></div>
+		
+			
+
+                    </div>
+                    <!--/.Panel 1-->
+
+                    <!--Panel 2-->
+                    <div class="tab-pane fade" id="panel22" role="tabpanel">
+
+                      	<div class="card">
+			<div class="card-body waves-effect waves-light">
+            <div class="row">
+	
+            <div class="col-md-3">
+              <img src="img/ImageReaderArticle1 (1).jpg" width="100%">
+              </div>
+              <div class="col-md-6">
+                <p class="feature-title"><strong>
+Glimpse of Assam & Meghalaya</strong></p>
+				<p><b>3N / 4D : </b>Guwahati - 1N, Shillong - 2N<br><b>Validity : </b>28-05-2018 / 30-09-2018</p>
+               <a class="btn-floating btn-sm border border-warning waves-effect waves-light">
+			   <i class="home fa fa-bed">
+			   </i></a>
+			 <a class="btn-floating btn-sm border border-warning waves-effect waves-light"> <i class="home fa fa-binoculars"></i>
+			  <a class="btn-floating btn-sm border border-warning waves-effect waves-light"><i class="home fa fa-car"></i>
+			  </a> <a class="btn-floating btn-sm border border-warning waves-effect waves-light"><i class="home fa fa-cutlery"></i></a>
+			  </a> 
+              </div>
+			    <div class="col-md-3">
+                <h5 class="feature-title">From</h5>
+                <p class="grey-text">14,500 </p>
+					<button type="button" class="btn btn-md btn-warning  mb-3">Detail</button>
+              </div>
+            </div>
+			  </div>
+            </div>
+			<div style="height:30px"></div>
+			 	<div class="card">
+			<div class="card-body waves-effect waves-light">
+            <div class="row">
+	
+            <div class="col-md-3">
+              <img src="img/ImageReaderArticle1 (1).jpg" width="100%">
+              </div>
+              <div class="col-md-6">
+                <p class="feature-title"><strong>Splendid Shillong</strong></p>
+				<p><b>3N / 4D : </b>Shillong - 3N<br><b>Validity : </b>28-05-2018 / 30-09-2018</p>
+               <a class="btn-floating btn-sm border border-warning waves-effect waves-light">
+			   <i class="home fa fa-bed">
+			   </i></a>
+			 <a class="btn-floating btn-sm border border-warning waves-effect waves-light"> <i class="home fa fa-binoculars"></i>
+			  <a class="btn-floating btn-sm border border-warning waves-effect waves-light"><i class="home fa fa-car"></i>
+			  </a> <a class="btn-floating btn-sm border border-warning waves-effect waves-light"><i class="home fa fa-cutlery"></i></a>
+			  </a> 
+              </div>
+			    <div class="col-md-3">
+                <h5 class="feature-title">From</h5>
+                <p class="grey-text">14,500 </p>
+					<button type="button" class="btn btn-md btn-warning  mb-3">Detail</button>
+              </div>
+            </div>
+			  </div>
+            </div>
+			<div style="height:30px"></div>
+			 	<div class="card">
+			<div class="card-body waves-effect waves-light">
+            <div class="row">
+	
+            <div class="col-md-3">
+              <img src="img/ImageReaderArticle1 (1).jpg" width="100%">
+              </div>
+              <div class="col-md-6">
+                <p class="feature-title"><strong>Alluring Assam</strong></p>
+				<p><b>3N / 4D : </b>Guwahati - 1N, Kaziranga - 2N<br><b>Validity :</b> 28-05-2018 / 30-09-2018</p>
+               <a class="btn-floating btn-sm border border-warning waves-effect waves-light">
+			   <i class="home fa fa-bed">
+			   </i></a>
+			 <a class="btn-floating btn-sm border border-warning waves-effect waves-light"> <i class="home fa fa-binoculars"></i>
+			  <a class="btn-floating btn-sm border border-warning waves-effect waves-light"><i class="home fa fa-car"></i>
+			  </a> <a class="btn-floating btn-sm border border-warning waves-effect waves-light"><i class="home fa fa-cutlery"></i></a>
+			  </a> 
+              </div>
+			    <div class="col-md-3">
+                <h5 class="feature-title">From</h5>
+                <p class="grey-text">14,500 </p>
+					<button type="button" class="btn btn-md btn-warning  mb-3">Detail</button>
+              </div>
+            </div>
+			  </div>
+            </div>
+			<div style="height:30px"></div>
+			 	<div class="card">
+			<div class="card-body waves-effect waves-light">
+            <div class="row">
+	
+            <div class="col-md-3">
+              <img src="img/ImageReaderArticle1 (1).jpg" width="100%">
+              </div>
+              <div class="col-md-6">
+                <p class="feature-title"><strong>Magic of Meghalaya and Assam</strong></p>
+				<p><b>4N / 5D :</b> Shillong - 2N, Kaziranga - 1N, Guwahati - 1N<br><b>Validity :</b> 28-05-2018 / 30-09-2018</p>
+               <a class="btn-floating btn-sm border border-warning waves-effect waves-light">
+			   <i class="home fa fa-bed">
+			   </i></a>
+			 <a class="btn-floating btn-sm border border-warning waves-effect waves-light"> <i class="home fa fa-binoculars"></i>
+			  <a class="btn-floating btn-sm border border-warning waves-effect waves-light"><i class="home fa fa-car"></i>
+			  </a> <a class="btn-floating btn-sm border border-warning waves-effect waves-light"><i class="home fa fa-cutlery"></i></a>
+			  </a> 
+              </div>
+			    <div class="col-md-3">
+                <h5 class="feature-title">From</h5>
+                <p class="grey-text">14,500 </p>
+					<button type="button" class="btn btn-md btn-warning  mb-3">Detail</button>
+              </div>
+            </div>
+			  </div>
+            </div>
+			<div style="height:30px"></div>
+			 	<div class="card">
+			<div class="card-body waves-effect waves-light">
+            <div class="row">
+	
+            <div class="col-md-3">
+              <img src="img/ImageReaderArticle1 (1).jpg" width="100%">
+              </div>
+              <div class="col-md-6">
+                <p class="feature-title"><strong>
+North East Getaway</strong></p>
+				<p><b>6N / 7D : </b>Shillong - 2N, Kaziranga - 2N, Guwahati - 2N<br><b>Validity :</b> 28-05-2018 / 30-09-2018</p>
+               <a class="btn-floating btn-sm border border-warning waves-effect waves-light">
+			   <i class="home fa fa-bed">
+			   </i></a>
+			 <a class="btn-floating btn-sm border border-warning waves-effect waves-light"> <i class="home fa fa-binoculars"></i>
+			  <a class="btn-floating btn-sm border border-warning waves-effect waves-light"><i class="home fa fa-car"></i>
+			  </a> <a class="btn-floating btn-sm border border-warning waves-effect waves-light"><i class="home fa fa-cutlery"></i></a>
+			  </a> 
+              </div>
+			    <div class="col-md-3">
+                <h5 class="feature-title">From</h5>
+                <p class="grey-text">14,500 </p>
+					<button type="button" class="btn btn-md btn-warning  mb-3">Detail</button>
+              </div>
+            </div>
+			  </div>
+            </div>
+
+                    </div>
+                    <!--/.Panel 2-->
+                    <!--Panel 3-->
+                    <div class="tab-pane fade" id="panel23" role="tabpanel">
+
+                    	<div class="card">
+			<div class="card-body waves-effect waves-light">
+            <div class="row">
+	
+            <div class="col-md-3">
+              <img src="img/ImageReaderArticle1 (1).jpg" width="100%">
+              </div>
+              <div class="col-md-6">
+                <p class="feature-title"><strong>
+Splendid Shimla and Manali</strong></p>
+				<p><b>5N / 6D : </b>Shimla - 2N, Manali - 3N
+<br><b>Validity : </b>28-05-2018 / 30-09-2018</p>
+               <a class="btn-floating btn-sm border border-warning waves-effect waves-light">
+			   <i class="home fa fa-bed">
+			   </i></a>
+			 <a class="btn-floating btn-sm border border-warning waves-effect waves-light"> <i class="home fa fa-binoculars"></i>
+			  <a class="btn-floating btn-sm border border-warning waves-effect waves-light"><i class="home fa fa-car"></i>
+			  </a> <a class="btn-floating btn-sm border border-warning waves-effect waves-light"><i class="home fa fa-cutlery"></i></a>
+			  </a> 
+              </div>
+			    <div class="col-md-3">
+                <h5 class="feature-title">From</h5>
+                <p class="grey-text">14,500 </p>
+					<button type="button" class="btn btn-md btn-warning  mb-3">Detail</button>
+              </div>
+            </div>
+			  </div>
+            </div>
+				<div class="card">
+			<div class="card-body waves-effect waves-light">
+            <div class="row">
+	
+            <div class="col-md-3">
+              <img src="img/ImageReaderArticle1 (1).jpg" width="100%">
+              </div>
+              <div class="col-md-6">
+                <p class="feature-title"><strong>
+
+Natural Splendours of Himachal</strong></p>
+				<p><b>6N / 7D: </b>Shimla - 2N, Manali - 3N, Chandigarh - 1N
+<br><b>Validity :</b>28-05-2018 / 30-09-2018</p>
+               <a class="btn-floating btn-sm border border-warning waves-effect waves-light">
+			   <i class="home fa fa-bed">
+			   </i></a>
+			 <a class="btn-floating btn-sm border border-warning waves-effect waves-light"> <i class="home fa fa-binoculars"></i>
+			  <a class="btn-floating btn-sm border border-warning waves-effect waves-light"><i class="home fa fa-car"></i>
+			  </a> <a class="btn-floating btn-sm border border-warning waves-effect waves-light"><i class="home fa fa-cutlery"></i></a>
+			  </a> 
+              </div>
+			    <div class="col-md-3">
+                <h5 class="feature-title">From</h5>
+                <p class="grey-text">14,500 </p>
+					<button type="button" class="btn btn-md btn-warning  mb-3">Detail</button>
+              </div>
+            </div>
+			  </div>
+            </div>
+				<div class="card">
+			<div class="card-body waves-effect waves-light">
+            <div class="row">
+	
+            <div class="col-md-3">
+              <img src="img/ImageReaderArticle1 (1).jpg" width="100%">
+              </div>
+              <div class="col-md-6">
+                <p class="feature-title"><strong>
+
+Best of Himachal with Chandigarh</strong></p>
+				<p><b>9N / 10D :</b> Shimla - 2N, Manali - 3N, Dharamshala - 1N, <br>Dalhousie - 2N, Chandigarh - 1N
+<br><b>Validity :</b> 28-05-2018 / 30-09-2018</p>
+               <a class="btn-floating btn-sm border border-warning waves-effect waves-light">
+			   <i class="home fa fa-bed">
+			   </i></a>
+			 <a class="btn-floating btn-sm border border-warning waves-effect waves-light"> <i class="home fa fa-binoculars"></i>
+			  <a class="btn-floating btn-sm border border-warning waves-effect waves-light"><i class="home fa fa-car"></i>
+			  </a> <a class="btn-floating btn-sm border border-warning waves-effect waves-light"><i class="home fa fa-cutlery"></i></a>
+			  </a> 
+              </div>
+			    <div class="col-md-3">
+                <h5 class="feature-title">From</h5>
+                <p class="grey-text">14,500 </p>
+					<button type="button" class="btn btn-md btn-warning  mb-3">Detail</button>
+              </div>
+            </div>
+			  </div>
+            </div>
+			<div style="height:30px"></div>
+
+                    </div>
+                    <!--/.Panel 3-->
+                </div>
+            </div>
+        </div>
+        <!-- Nav tabs -->
+    </div>
+    <!--/.Panel 1-->
+    <!--Panel 2-->
+    <div class="tab-pane fade" id="panel666" role="tabpanel">
+        <br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae
+        placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae
+        placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
+    </div>
+    <!--/.Panel 2-->
+</div>
+<!-- Tab panels -->
+    </div>
+  </main>
+  <!--Main layout-->
+
+  <!--Footer-->
+ <footer id="footer" class="page-footer unique-color-dark pt-4 mt-4">
+
+  <!--Footer Links-->
+  <div class="container text-center text-md-left mt-5">
+    <div class="row mt-3">
+      <!--First column-->
+      <div class="col-md-3 col-lg-3 col-xl-3 mb-4">
+       <h2 class="h2 white-text">Flight Booking </h2>
+       
+        <h4 class="pt-3">
+          <a id="footer-link-faq" href="#" class="orange-text">022 6713 4444</a>
+        </h4>
+         <h4 class="pt-2">
+          <a id="footer-link-browsers" href="#" class="orange-text">support@Flight Booking .com</a>
+        </h4>
+        <p>
+          <a id="footer-link-license" href="#">24/7 Dedicated Customer Support</a>
+        </p>
+        <p>
+          <a id="footer-link-changelog" href="#">Copyright © 2008-2018 Flight Booking .com (India) Pvt. Ltd. 
+All Rights Reserved.</a>
+        </p>
+     
+      </div>
+      <!--/.First column-->
+      <!--Second column-->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+        <h6 class="text-uppercase font-weight-bold mb-4">
+          <strong>About Flight Booking .com</strong>
+        </h6>
+       
+        <p>
+          <a id="footer-link-jquery" href="#">The Management</a>
+        </p>
+        <p>
+          <a id="footer-link-angular" href="#">News Room</a>
+        </p>
+        <p>
+          <a id="footer-link-react" href="#">Testimonials</a>
+        </p>
+        <p>
+          <a id="footer-link-vue" href="#">Careers</a>
+        </p>
+        <p>
+          <a id="footer-link-brandflow" href="#">Franchisee</a>
+        </p>
+        <p>
+          <a id="footer-link-freebies" href="#">Contact Us</a>
+        </p>
+        <p>
+          <a id="footer-link-templates" href="#">Site Map</a>
+        </p>
+      </div>
+      <!--/.Second column-->
+      <!--Third column-->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+        <h6 class="text-uppercase font-weight-bold mb-4">
+          <strong>Corporate & Groups</strong>
+        </h6>
+     
+        <p>
+          <a id="footer-link-tutBootstrap" href="#">Corporate Travel</a>
+        </p>
+        <p>
+          <a id="footer-link-tutWordpress" href="#">Group Travel</a>
+        </p>
+        <p>
+          <a id="footer-link-tutAngular" href="#">MICE</a>
+        </p>
+   
+      </div>
+      <!--/.Third column-->
+      <!--Fourth column-->
+      <div class="col-md-2 col-lg-2 col-xl-2">
+        <h6 class="text-uppercase font-weight-bold mb-4">
+          <strong>Business Programs</strong>
+        </h6>
+       
+        <p>
+         Franchisee</p>
+     
+        <p>
+          <a id="footer-link-team" href="#">
+           Preferred Sales Agent</a>
+        </p>
+        <p>
+          <a id="footer-link-company" href="#">
+           Itz Cash Agent</a>
+        </p>
+        <p>
+          <a id="footer-link-formedia" href="#">
+            For media</a>
+        </p>
+      </div>
+	    <div class="col-md-2 col-lg-3 col-xl-3">
+        <h6 class="text-uppercase font-weight-bold mb-4">
+          <strong>Our Services</strong>
+        </h6>
+       
+        <p>
+         Customer Support</p>
+        <!-- <p>
+              <i class="fa fa-building mr-3"></i> Our story</p> -->
+        <p>
+          <a id="footer-link-team" href="#">
+            Domestic Flight Tickets</a>
+        </p>
+        <p>
+          <a id="footer-link-company" href="#">
+           Domestic Hotels</a>
+        </p>
+        <p>
+          <a id="footer-link-formedia" href="#">
+           Terms & Conditions</a>
+        </p>
+		 <p>
+          <a id="footer-link-company" href="#">
+           Privacy Policy</a>
+        </p>
+        <p>
+          <a id="footer-link-formedia" href="#">
+         Payment Services</a>
+        </p>
+      </div>
+      <!--/.Fourth column-->
+    </div>
+  </div>
+  <!--/.Footer Links-->
+  <!-- Copyright-->
+  <div class="footer-copyright py-3 text-center">
+    © 2018 Copyright:
+    <a href="#">
+      <strong>Flight Booking </strong>
+    </a>
+  </div>
+  <!--/.Copyright -->
+</footer>
+  <!--/.Footer-->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+      <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+  </script>
+  <script>
+// Data Picker Initialization
+$('.datepicker').pickadate();
+</script>
+<script>
+$(document).ready(function(){
+    $(document).ajaxStart(function(){
+        $("#wait").css("display", "block");
+    });
+    $(document).ajaxComplete(function(){
+        $("#wait").css("display", "none");
+    });
+    $("button").click(function(){
+        $("#txt").load("demo_ajax_load.asp");
+    });
+});
+</script>
+  </body>
+
+</html>
+
